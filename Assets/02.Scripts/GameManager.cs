@@ -10,11 +10,12 @@ public class GameManager : MonoBehaviour
     public long money;
     public long moneyIncreaseAmount;
     public TMP_Text textMoney;
+    public float raycastDistance = 10f;  // 레이캐스트의 길이
+    private Camera mainCamera;  // 카메라
 
-    // Start is called before the first frame update
-    void Start()
+    private void Start()
     {
-
+        mainCamera = Camera.main;  // 메인 카메라 참조
     }
 
     // Update is called once per frame
@@ -31,7 +32,16 @@ public class GameManager : MonoBehaviour
         {
             if (EventSystem.current.IsPointerOverGameObject() == false) // UI 위에 있지 않을 때
             {
-                money += moneyIncreaseAmount;   // '소지금'을 '소지금 증가량'만큼 증가시킴
+                Ray ray = mainCamera.ScreenPointToRay(Input.mousePosition);
+                RaycastHit2D hit = Physics2D.Raycast(ray.origin, ray.direction, raycastDistance);
+
+                // 레이의 시작점과 방향을 디버그 라인으로 표시
+                Debug.DrawRay(ray.origin, ray.direction * raycastDistance, Color.red, 0.5f);
+
+                if (hit.collider != null && hit.collider.CompareTag("MoneyObject"))
+                {
+                    money += moneyIncreaseAmount;   // '소지금'을 '소지금 증가량'만큼 증가시킴
+                }
             }
         }
     }
