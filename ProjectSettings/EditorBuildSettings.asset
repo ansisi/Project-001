@@ -23,4 +23,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/01.Scenes/Fence/Fence2.unity
     guid: 878acf0e17e71134c8a7edd8c9a8433b
+  - enabled: 1
+    path: Assets/01.Scenes/Fence/Fence3.unity
+    guid: b749f9ba1b9647341bd9bb23adccca88
   m_configObjects: {}

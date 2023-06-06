@@ -1,11 +1,13 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class Option : MonoBehaviour
 {
     public GameObject PanelOption;
     public GameObject ButtonBack;
+    public GameObject ButtonMain;
 
     void Start()
     {
@@ -23,6 +25,11 @@ public class Option : MonoBehaviour
     public void ButtonOption_Clicked()
     {
         PanelOption.SetActive(true);
+    }
+
+    public void ButtonMain_Clicked()
+    {
+        SceneManager.LoadScene("Main");
     }
 
     public void ButtonBack_Clicked()
