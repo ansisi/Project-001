@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: b2ffecbc75c69c544a1562b99f559811
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - lockImage: {fileID: 21300000, guid: 419f6d07176f8204cb1d589e7f1bc788, type: 3}
+  - openImage: {fileID: 21300000, guid: 419f6d07176f8204cb1d589e7f1bc788, type: 3}
+  - animalImage: {fileID: 21300000, guid: 419f6d07176f8204cb1d589e7f1bc788, type: 3}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
