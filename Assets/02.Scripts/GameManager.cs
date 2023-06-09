@@ -17,6 +17,8 @@ public class GameManager : MonoBehaviour
     public GameManager() { }
     public static GameManager Instance { get; private set; }    //½Ì±ÛÅæÈ­
 
+    // protected GameManager GameManager => GameManager.Instance;           //½Ì±ÛÅæ ºÒ·¯¿À±â
+
     private void Awake()
     {
         if (Instance)
