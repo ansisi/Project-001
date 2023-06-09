@@ -32,6 +32,16 @@ public class GameManager : MonoBehaviour
             Instance = this;
             DontDestroyOnLoad(gameObject);
         }
+        SceneManager.sceneLoaded += OnSceneLoaded;
+    }
+    private void OnDestroy()    //이 오브젝트가 파괴될 경우
+    {
+        SceneManager.sceneLoaded -= OnSceneLoaded;  //이벤트를 삭제한다. 
+    }
+
+    private void OnSceneLoaded(Scene scene, LoadSceneMode mode)
+    {
+        
     }
 
     private void Start()
