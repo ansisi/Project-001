@@ -12,7 +12,7 @@ public class GameManager : MonoBehaviour
     public long moneyIncreaseAmount;
     public TMP_Text textMoney;
     public float raycastDistance = 10f;  // 레이캐스트의 길이
-    private Camera mainCamera;  // 카메라
+    public Camera mainCamera;  // 카메라
 
     public GameManager() { }
     public static GameManager Instance { get; private set; }    //싱글톤화
@@ -41,7 +41,14 @@ public class GameManager : MonoBehaviour
 
     private void OnSceneLoaded(Scene scene, LoadSceneMode mode)
     {
-        
+        if (scene.name == "Fence1" || scene.name == "Fence2"|| scene.name == "Farm")
+        {
+            GameObject temp = GameObject.FindGameObjectWithTag("SetSceneUI");
+            textMoney = temp.GetComponent<SetSceneUI>().uimoney.GetComponent<TMP_Text>();
+
+            textMoney.text = money.ToString();
+            mainCamera = Camera.main;  // 메인 카메라 참조
+        }
     }
 
     private void Start()

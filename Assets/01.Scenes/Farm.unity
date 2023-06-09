@@ -1222,8 +1222,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   money: 0
   moneyIncreaseAmount: 1
-  textMoney: {fileID: 1029453172}
+  textMoney: {fileID: 0}
   raycastDistance: 1
+  mainCamera: {fileID: 0}
 --- !u!4 &984817737
 Transform:
   m_ObjectHideFlags: 0
@@ -1238,6 +1239,51 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1025818453
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1025818455}
+  - component: {fileID: 1025818454}
+  m_Layer: 0
+  m_Name: Box
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1025818454
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1025818453}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 72a34d9128769614fa3e7390c868cf5c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Test: 500
+--- !u!4 &1025818455
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1025818453}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 470.5731, y: 374.18808, z: 2.6392605}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1029453172 stripped
 MonoBehaviour:
@@ -1585,6 +1631,51 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 51c15a960a9597040b00af091b98c258, type: 3}
+--- !u!1 &2050488467
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2050488469}
+  - component: {fileID: 2050488468}
+  m_Layer: 0
+  m_Name: SetSceneUI
+  m_TagString: SetSceneUI
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &2050488468
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2050488467}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: be6d023aa36cad844bdb1a656c059dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  uimoney: {fileID: 1029453172}
+--- !u!4 &2050488469
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2050488467}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 470.5731, y: 374.18808, z: 2.6392605}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 8
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &358053402224959522
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1600,6 +1691,10 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 982361867}
+    - target: {fileID: 358053402445419857, guid: 65aa087cca561554aab212612c8bd5d6, type: 3}
+      propertyPath: m_TagString
+      value: Textmoney
+      objectReference: {fileID: 0}
     - target: {fileID: 358053402521292352, guid: 65aa087cca561554aab212612c8bd5d6, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -1705,6 +1800,18 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 340311037}
     m_Modifications:
+    - target: {fileID: 4216013305625071369, guid: dd5a5a261a49c7c48a7718d095fe571d, type: 3}
+      propertyPath: m_Color.b
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4216013305625071369, guid: dd5a5a261a49c7c48a7718d095fe571d, type: 3}
+      propertyPath: m_Color.g
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4216013305625071369, guid: dd5a5a261a49c7c48a7718d095fe571d, type: 3}
+      propertyPath: m_Color.r
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4216013305785753419, guid: dd5a5a261a49c7c48a7718d095fe571d, type: 3}
       propertyPath: m_SizeDelta.y
       value: 0

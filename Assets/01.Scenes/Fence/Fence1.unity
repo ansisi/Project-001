@@ -222,6 +222,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7435579587105581254, guid: 84e11019941d23d4ea8f4a99e425f885, type: 3}
+      propertyPath: m_TagString
+      value: Textmoney
+      objectReference: {fileID: 0}
     - target: {fileID: 7435579587343029091, guid: 84e11019941d23d4ea8f4a99e425f885, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
@@ -241,6 +245,17 @@ RectTransform:
   m_CorrespondingSourceObject: {fileID: 7435579586541390140, guid: 84e11019941d23d4ea8f4a99e425f885, type: 3}
   m_PrefabInstance: {fileID: 51917451}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &51917453 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 7435579586823515875, guid: 84e11019941d23d4ea8f4a99e425f885, type: 3}
+  m_PrefabInstance: {fileID: 51917451}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &438583596
 GameObject:
   m_ObjectHideFlags: 0
@@ -904,6 +919,51 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f8029a3a8742abb4089be7e4c7a3269b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1 &1137174427
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1137174429}
+  - component: {fileID: 1137174428}
+  m_Layer: 0
+  m_Name: SetSceneUI
+  m_TagString: SetSceneUI
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1137174428
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1137174427}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: be6d023aa36cad844bdb1a656c059dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  uimoney: {fileID: 51917453}
+--- !u!4 &1137174429
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1137174427}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 470.5731, y: 374.18808, z: 2.6392605}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 7
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1245915704
 GameObject:
   m_ObjectHideFlags: 0
@@ -1197,6 +1257,7 @@ MonoBehaviour:
   moneyIncreaseAmount: 1
   textMoney: {fileID: 0}
   raycastDistance: 1
+  mainCamera: {fileID: 0}
 --- !u!4 &1349580171
 Transform:
   m_ObjectHideFlags: 0
