@@ -14,6 +14,24 @@ public class GameManager : MonoBehaviour
     public float raycastDistance = 10f;  // 레이캐스트의 길이
     private Camera mainCamera;  // 카메라
 
+    public GameManager() { }
+    public static GameManager Instance { get; private set; }    //싱글톤화
+
+    private void Awake()
+    {
+        if (Instance)
+        {
+            Destroy(gameObject);
+            return;
+        }
+        else
+        {
+            transform.parent = null;
+            Instance = this;
+            DontDestroyOnLoad(gameObject);
+        }
+    }
+
     private void Start()
     {
         mainCamera = Camera.main;  // 메인 카메라 참조
