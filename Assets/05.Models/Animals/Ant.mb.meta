@@ -1,0 +1,246 @@
+fileFormatVersion: 2
+guid: b9e14ee940d4bc143af85ddff28b6750
+ModelImporter:
+  serializedVersion: 21300
+  internalIDToNameTable: []
+  externalObjects: {}
+  materials:
+    materialImportMode: 2
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    removeConstantScaleCurves: 1
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 3
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 0
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    useSRGBMaterialColor: 1
+    sortHierarchyByName: 1
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    nodeNameCollisionStrategy: 1
+    fileIdsGeneration: 2
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    keepQuads: 0
+    weldVertices: 1
+    bakeAxisConversion: 0
+    preserveHierarchy: 0
+    skinWeightsMode: 0
+    maxBonesPerVertex: 73
+    minBoneWeight: 0.001
+    optimizeBones: 1
+    meshOptimizationFlags: -1
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVMarginMethod: 1
+    secondaryUVMinLightmapResolution: 40
+    secondaryUVMinObjectScale: 1
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  referencedClips: []
+  importAnimation: 1
+  humanDescription:
+    serializedVersion: 3
+    human: []
+    skeleton:
+    - name: Ant(Clone)
+      parentName: 
+      position: {x: 0, y: 0, z: 0}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: pSphere27
+      parentName: Ant(Clone)
+      position: {x: -2.938555, y: 1.8494447, z: -1.9401709}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 0.66549075, y: 0.49623325, z: 0.93942326}
+    - name: transform61
+      parentName: pSphere27
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: pSphere28
+      parentName: Ant(Clone)
+      position: {x: -2.938555, y: 1.8494447, z: -3.3663464}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 0.6214349, y: 0.49623325, z: 0.67664164}
+    - name: transform63
+      parentName: pSphere28
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: pSphere29
+      parentName: Ant(Clone)
+      position: {x: -2.938555, y: 1.8494447, z: -5.0488563}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 0.6129996, y: 0.49623325, z: 1.1977577}
+    - name: transform62
+      parentName: pSphere29
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: pSphere30
+      parentName: Ant(Clone)
+      position: {x: -2.2658489, y: 1.906372, z: -1.859741}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 0.042953167, y: 0.038991235, z: 0.038991235}
+    - name: transform67
+      parentName: pSphere30
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: pSphere31
+      parentName: Ant(Clone)
+      position: {x: -3.5890877, y: 1.906372, z: -1.859741}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 0.042953167, y: 0.038991235, z: 0.038991235}
+    - name: transform66
+      parentName: pSphere31
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: pCylinder30
+      parentName: Ant(Clone)
+      position: {x: -3.8013635, y: 2.0610185, z: -3.0136187}
+      rotation: {x: 0.12940952, y: 0.22414386, z: 0.4829629, w: 0.8365163}
+      scale: {x: 0.04840793, y: 0.43050483, z: 0.045475844}
+    - name: transform68
+      parentName: pCylinder30
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: pCylinder31
+      parentName: Ant(Clone)
+      position: {x: -3.8452098, y: 2.0284677, z: -3.4079607}
+      rotation: {x: 0, y: 0, z: 0.5, w: 0.8660254}
+      scale: {x: 0.04840793, y: 0.43050483, z: 0.045475844}
+    - name: transform64
+      parentName: pCylinder31
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: pCylinder32
+      parentName: Ant(Clone)
+      position: {x: -3.8005662, y: 2.0664258, z: -3.784272}
+      rotation: {x: -0.08682409, y: -0.15038373, z: 0.49240386, w: 0.85286856}
+      scale: {x: 0.04840793, y: 0.43050483, z: 0.045475844}
+    - name: transform65
+      parentName: pCylinder32
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: pCylinder33
+      parentName: Ant(Clone)
+      position: {x: -2.0227625, y: 2.0284677, z: -3.4079607}
+      rotation: {x: 0.54416335, y: 0.83820236, z: -0.03521575, w: -0.007941235}
+      scale: {x: 0.04840793, y: 0.43050483, z: 0.045475844}
+    - name: transform71
+      parentName: pCylinder33
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: pCylinder34
+      parentName: Ant(Clone)
+      position: {x: -2.0227625, y: 2.0284677, z: -3.1542673}
+      rotation: {x: 0.5408579, y: 0.8223824, z: -0.069784924, w: 0.16214189}
+      scale: {x: 0.04840793, y: 0.43050483, z: 0.045475844}
+    - name: transform70
+      parentName: pCylinder34
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: pCylinder35
+      parentName: Ant(Clone)
+      position: {x: -2.0227625, y: 2.0284677, z: -3.7187822}
+      rotation: {x: 0.5309345, y: 0.8285539, z: 0.00042344327, w: -0.17778307}
+      scale: {x: 0.04840793, y: 0.43050483, z: 0.045475844}
+    - name: transform69
+      parentName: pCylinder35
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: pCone6
+      parentName: Ant(Clone)
+      position: {x: -2.460746, y: 1.6975496, z: -0.5886141}
+      rotation: {x: 0.76604444, y: 0, z: 0, w: 0.64278764}
+      scale: {x: 0.09564192, y: 0.2703461, z: 0.13962948}
+    - name: transform60
+      parentName: pCone6
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: pCone7
+      parentName: Ant(Clone)
+      position: {x: -3.4345236, y: 1.7387451, z: -0.612885}
+      rotation: {x: 0.028011316, y: 0.71461236, z: 0.69816196, w: -0.033382587}
+      scale: {x: 0.09564192, y: 0.2703461, z: 0.13962948}
+    - name: transform72
+      parentName: pCone7
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: pCone8
+      parentName: Ant(Clone)
+      position: {x: -3.0123746, y: 1.2085569, z: -3.3966603}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    globalScale: 1
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+    hasExtraRoot: 1
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  autoGenerateAvatarMappingIfUnspecified: 1
+  animationType: 2
+  humanoidOversampling: 1
+  avatarSetup: 0
+  addHumanoidExtraRootOnlyWhenUsingAvatar: 1
+  remapMaterialsIfMaterialImportModeIsNone: 0
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

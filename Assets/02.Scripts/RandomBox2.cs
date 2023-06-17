@@ -34,12 +34,18 @@ public class RandomBox2 : MonoBehaviour
 
                 if (Cspawn == 1)
                 {
-                    //cat
+                    GameObject temp10 = Instantiate(Animal[14]);
+                    temp10.transform.position = new Vector3(0.0f, 0.0f, 0.0f);
+
+                    Debug.Log("°í¾çÀÌ");
                 }
                 else if (Cspawn == 2)
                 {
-                    Debug.Log("Ant");
-                
+                    GameObject temp10 = Instantiate(Animal[13]);
+                    temp10.transform.position = new Vector3(0.0f, 0.0f, 0.0f);
+
+                    Debug.Log("°³¹Ì");
+
                 }
                 else if (Cspawn == 3)
                 {
@@ -48,36 +54,52 @@ public class RandomBox2 : MonoBehaviour
                 }
                 else if (Cspawn == 4)
                 {
-                    Debug.Log("Chicken");
-                    
+                    GameObject temp10 = Instantiate(Animal[15]);
+                    temp10.transform.position = new Vector3(0.0f, 0.0f, 0.0f);
+
+                    Debug.Log("´ß");
                 }
                 else if (Cspawn == 5)
                 {
-                    Debug.Log("Cochineal");
+                    GameObject temp10 = Instantiate(Animal[16]);
+                    temp10.transform.position = new Vector3(0.0f, 0.0f, 0.0f);
+
+                    Debug.Log("¿¬Áö¹ú·¹");
                 }
                 else if (Cspawn == 6)
                 {
-                    Debug.Log("Cow");
+                    GameObject temp10 = Instantiate(Animal[17]);
+                    temp10.transform.position = new Vector3(0.0f, 0.0f, 0.0f);
+
+                    Debug.Log("¼Ò");
                 }
                 else if (Cspawn == 7)
                 {
                     GameObject temp2 = Instantiate(Animal[1]);
                     temp2.transform.position = new Vector3(0.0f, 0.0f, 0.0f);
+
+                    Debug.Log("°³");
                 }
                 else if (Cspawn == 8)
                 {
                     GameObject temp3 = Instantiate(Animal[2]);
                     temp3.transform.position = new Vector3(0.0f, 0.0f, 0.0f);
+
+                    Debug.Log("¿©¿ì");
                 }
                 else if (Cspawn == 9)
                 {
                     GameObject temp4 = Instantiate(Animal[3]);
                     temp4.transform.position = new Vector3(0.0f, 0.0f, 0.0f);
+
+                    Debug.Log("±â´ÏÇÇ±×");
                 }
                 else if (Cspawn == 10)
                 {
                     GameObject temp5 = Instantiate(Animal[7]);
                     temp5.transform.position = new Vector3(0.0f, 0.0f, 0.0f);
+
+                    Debug.Log("µÅÁö");
                 }
                 else if (Cspawn == 11)
                 {
@@ -98,21 +120,31 @@ public class RandomBox2 : MonoBehaviour
                 }
                 else if (Rspawn == 2)
                 {
-                    //ÆÇ´Ù
+                    GameObject temp10 = Instantiate(Animal[20]);
+                    temp10.transform.position = new Vector3(0.0f, 0.0f, 0.0f);
+
+                    Debug.Log("ÆÇ´Ù");
                 }
                 else if (Rspawn == 3)
                 {
                     GameObject temp7 = Instantiate(Animal[5]);
                     temp7.transform.position = new Vector3(0.0f, 0.0f, 0.0f);
+
+                    Debug.Log("¿ø¼şÀÌ");
                 }
                 else if (Rspawn == 4)
                 {
                     GameObject temp11 = Instantiate(Animal[10]);
                     temp11.transform.position = new Vector3(0.0f, 0.0f, 0.0f);
+
+                    Debug.Log("¾ó·è¸»");
                 }
                 else if (Rspawn == 5)
                 {
-                    //¾Ç¾î
+                    GameObject temp10 = Instantiate(Animal[18]);
+                    temp10.transform.position = new Vector3(0.0f, 0.0f, 0.0f);
+
+                    Debug.Log("¾Ç¾î");
                 }
                 else if (Rspawn == 6)
                 {
@@ -129,16 +161,24 @@ public class RandomBox2 : MonoBehaviour
                 }
                 else if (Rspawn == 9)
                 {
-                    //µ¶¼ö¸®
+                    GameObject temp10 = Instantiate(Animal[12]);
+                    temp10.transform.position = new Vector3(0.0f, 0.0f, 0.0f);
+
+                    Debug.Log("µ¶¼ö¸®");
                 }
                 else if (Rspawn == 10)
                 {
-                    //°í·¡
+                    GameObject temp10 = Instantiate(Animal[21]);
+                    temp10.transform.position = new Vector3(0.0f, 0.0f, 0.0f);
+
+                    Debug.Log("°í·¡");
                 }
                 else if (Rspawn == 11)
                 {
                     GameObject temp10 = Instantiate(Animal[9]);
                     temp10.transform.position = new Vector3(0.0f, 0.0f, 0.0f);
+
+                    Debug.Log("È£¶ûÀÌ");
                 }
             }
             else if (RankRandom > 90 && RankRandom <= 96)
@@ -181,7 +221,10 @@ public class RandomBox2 : MonoBehaviour
                 int Lspawn = UnityEngine.Random.Range(1, 5);
                 if (Lspawn == 1)
                 {
-                    //Ã»·æ
+                    GameObject temp10 = Instantiate(Animal[11]);
+                    temp10.transform.position = new Vector3(0.0f, 0.0f, 0.0f);
+
+                    Debug.Log("Ã»·æ");
                 }
                 else if (Lspawn == 2)
                 {
@@ -194,6 +237,7 @@ public class RandomBox2 : MonoBehaviour
                 }
                 else if (Lspawn == 4)
                 {
+
                     GameObject temp = Instantiate(Animal[0]);
                     temp.transform.position = new Vector3(0.0f, 0.0f, 0.0f);
                 }
