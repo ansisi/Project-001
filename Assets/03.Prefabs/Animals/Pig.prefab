@@ -759,6 +759,7 @@ GameObject:
   - component: {fileID: -7806475099252093735}
   - component: {fileID: 8319454114371837760}
   - component: {fileID: 2358109842669670206}
+  - component: {fileID: 5196933438996192233}
   m_Layer: 0
   m_Name: Pig
   m_TagString: Untagged
@@ -803,7 +804,7 @@ Rigidbody:
   m_Mass: 1
   m_Drag: 0
   m_AngularDrag: 0.05
-  m_UseGravity: 1
+  m_UseGravity: 0
   m_IsKinematic: 0
   m_Interpolate: 0
   m_Constraints: 80
@@ -820,6 +821,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4a216bd0bc365b149be5a654de3bcd35, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  moveSpeed: 2
+  minIdleTime: 0.1
+  maxIdleTime: 0.1
+  minMoveTime: 2
+  maxMoveTime: 5
 --- !u!136 &2358109842669670206
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -834,6 +840,18 @@ CapsuleCollider:
   m_Height: 0.049384642
   m_Direction: 2
   m_Center: {x: -0.0015447331, y: 0.012944306, z: 0.0044770623}
+--- !u!114 &5196933438996192233
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6580013160624217990}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 55ec8a5412efc4048b492c8cee0b78cb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &6794721642275014532
 GameObject:
   m_ObjectHideFlags: 0

@@ -4,57 +4,62 @@ using UnityEngine;
 
 public class AnimalsMove : MonoBehaviour
 {
-    public Transform target;
-    public Vector3 direction;
-    public float velocity;
-    public float default_velocity;
-    public float accelaration;
-    public Vector3 default_direction;
+    public float moveSpeed = 5f;
+    public float minIdleTime = 1f;
+    public float maxIdleTime = 3f;
+    public float minMoveTime = 2f;
+    public float maxMoveTime = 5f;
 
-    void Start()
+private Vector3 randomDestination;
+    private float idleTime;
+    private float moveTime;
+
+    private void Start()
     {
-        // 자동으로 움직일 방향 벡터
-        default_direction.x = Random.Range(-10.0f, 10.0f);
-        default_direction.z = Random.Range(-5.0f, 7.0f);
-        // 가속도 지정 (추후 힘과 질량, 거리 등 계산해서 수정할 것)
-        accelaration = 0.1f;
-        default_velocity = 0.1f;
+        SetRandomDestination();
     }
 
-    // Update is called once per frame
-    void Update()
+    private void Update()
     {
-        // Player의 현재 위치를 받아오는 Object
-        target = GameObject.Find("Box").transform;
-        // Player와 객체 간의 거리 계산
-        float distance = Vector3.Distance(target.position, transform.position);
-
-        if (distance <= 10.0f)
+        if (idleTime > 0)
         {
-            MoveToTarget();
-            // 일정 거리안에 있다가 다시 멀어졌을 때, 일정거리안에 있었던 player의 방향으로 움직임
-            default_direction = direction;
+            idleTime -= Time.deltaTime;
+            if (idleTime <= 0)
+            {
+                SetRandomDestination();
+            }
         }
-        // 일정거리 밖에 있을 시, 속도 초기화하고 해당 방향으로 무빙 
         else
         {
-            velocity = 0.0f;
-            this.transform.position = new Vector3(transform.position.x + (default_direction.x * default_velocity),
-                                                   transform.position.y + (default_direction.y * default_velocity),
-                                                   transform.position.z);
+            MoveToDestination();
+            if (moveTime > 0)
+            {
+                moveTime -= Time.deltaTime;
+            }
+            else
+            {
+                idleTime = Random.Range(minIdleTime, maxIdleTime);
+                moveTime = 0;
+            }
         }
     }
 
-    public void MoveToTarget()
+    private void SetRandomDestination()
     {
-        // Player의 위치와 이 객체의 위치를 빼고 단위 벡터화 한다.
-        direction = (target.position - transform.position).normalized;
-        // 초가 아닌 한 프레임으로 가속도 계산하여 속도 증가
-        velocity = (velocity + accelaration * Time.deltaTime);
-        // 해당 방향으로 무빙
-        this.transform.position = new Vector3(transform.position.x + (direction.x * velocity),
-                                               transform.position.y + (direction.y * velocity),
-                                                  transform.position.z);
-
+        randomDestination = new Vector3(Random.Range(-10f, 10f), 0f, Random.Range(-10f, 10f));
+        moveTime = Random.Range(minMoveTime, maxMoveTime);
     }
+
+    private void MoveToDestination()
+    {
+        transform.position = Vector3.MoveTowards(transform.position, randomDestination, moveSpeed * Time.deltaTime);
+        if (transform.position == randomDestination)
+        {
+            idleTime = Random.Range(minIdleTime, maxIdleTime);
+            moveTime = 0;
+        }
+    }
+
+
+
 }

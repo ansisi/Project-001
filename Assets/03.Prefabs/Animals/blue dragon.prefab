@@ -539,6 +539,7 @@ GameObject:
   - component: {fileID: 1808018208076863160}
   - component: {fileID: -7191010435361936080}
   - component: {fileID: 4269340844951810362}
+  - component: {fileID: -1419043618558707001}
   m_Layer: 0
   m_Name: blue dragon
   m_TagString: Untagged
@@ -587,7 +588,7 @@ Rigidbody:
   m_Mass: 1
   m_Drag: 0
   m_AngularDrag: 0.05
-  m_UseGravity: 1
+  m_UseGravity: 0
   m_IsKinematic: 0
   m_Interpolate: 0
   m_Constraints: 80
@@ -604,6 +605,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4a216bd0bc365b149be5a654de3bcd35, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  moveSpeed: 2
+  minIdleTime: 0.1
+  maxIdleTime: 0.1
+  minMoveTime: 2
+  maxMoveTime: 5
 --- !u!136 &4269340844951810362
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -618,6 +624,18 @@ CapsuleCollider:
   m_Height: 2.689738
   m_Direction: 2
   m_Center: {x: -11.070139, y: -1.506067, z: 0.23798811}
+--- !u!114 &-1419043618558707001
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5652722323130082155}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e485d45b686e1ff40bf8ac1b6700f33a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &6309392802301795854
 GameObject:
   m_ObjectHideFlags: 0

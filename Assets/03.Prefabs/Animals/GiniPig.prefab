@@ -427,6 +427,7 @@ GameObject:
   - component: {fileID: -8280248819291303809}
   - component: {fileID: 3450096457359147059}
   - component: {fileID: 3275678110857661929}
+  - component: {fileID: 6364373631237984939}
   m_Layer: 0
   m_Name: GiniPig
   m_TagString: Untagged
@@ -472,7 +473,7 @@ Rigidbody:
   m_Mass: 1
   m_Drag: 0
   m_AngularDrag: 0.05
-  m_UseGravity: 1
+  m_UseGravity: 0
   m_IsKinematic: 0
   m_Interpolate: 0
   m_Constraints: 80
@@ -489,6 +490,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4a216bd0bc365b149be5a654de3bcd35, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  moveSpeed: 2
+  minIdleTime: 0.1
+  maxIdleTime: 0.1
+  minMoveTime: 2
+  maxMoveTime: 5
 --- !u!136 &3275678110857661929
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -503,6 +509,18 @@ CapsuleCollider:
   m_Height: 0.045360606
   m_Direction: 2
   m_Center: {x: -0.00027921796, y: 0, z: 0.011102388}
+--- !u!114 &6364373631237984939
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3904782995947387819}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 55ec8a5412efc4048b492c8cee0b78cb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &4102712728411951039
 GameObject:
   m_ObjectHideFlags: 0

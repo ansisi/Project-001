@@ -95,6 +95,7 @@ GameObject:
   - component: {fileID: 1412718634419888527}
   - component: {fileID: -8801928980430426618}
   - component: {fileID: 4542822291891230299}
+  - component: {fileID: 9125608466598963243}
   m_Layer: 0
   m_Name: zebra
   m_TagString: Untagged
@@ -152,7 +153,7 @@ Rigidbody:
   m_Mass: 1
   m_Drag: 0
   m_AngularDrag: 0.05
-  m_UseGravity: 1
+  m_UseGravity: 0
   m_IsKinematic: 0
   m_Interpolate: 0
   m_Constraints: 80
@@ -167,6 +168,23 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 4a216bd0bc365b149be5a654de3bcd35, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  moveSpeed: 2
+  minIdleTime: 0.1
+  maxIdleTime: 0.1
+  minMoveTime: 2
+  maxMoveTime: 5
+--- !u!114 &9125608466598963243
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1992852456985878558}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2cc596cad634bec49ac40264db3dd371, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &3002964139482532278
