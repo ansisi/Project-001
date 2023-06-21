@@ -1508,6 +1508,7 @@ GameObject:
   m_Component:
   - component: {fileID: 984817737}
   - component: {fileID: 984817736}
+  - component: {fileID: 984817738}
   m_Layer: 0
   m_Name: GameManager
   m_TagString: Untagged
@@ -1532,6 +1533,8 @@ MonoBehaviour:
   textMoney: {fileID: 0}
   raycastDistance: 1
   mainCamera: {fileID: 0}
+  myAnimal: 
+  randomBox2: {fileID: 0}
 --- !u!4 &984817737
 Transform:
   m_ObjectHideFlags: 0
@@ -1547,6 +1550,46 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &984817738
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 984817735}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6985caf8ff5d66a49821e9a006eb09df, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ButtonShop: {fileID: 1336069752}
+  button: {fileID: 0}
+  Animal:
+  - {fileID: 4024565170488099999, guid: f09b066d5b0be5a4080700f755a2dfa6, type: 3}
+  - {fileID: 5385843060107595807, guid: 865eacd30f7f6e7488f953408b16ba38, type: 3}
+  - {fileID: 8065360507006437391, guid: 8801d85e85b0afd419e80375f3d99101, type: 3}
+  - {fileID: 3904782995947387819, guid: 2b4dcea2142b2c84a8cfc992ef7de168, type: 3}
+  - {fileID: 3192800976972081295, guid: c22e786edb2f11148b85dae36d6a0469, type: 3}
+  - {fileID: 6325241898334201582, guid: 89eb88fd2e6269b45943f3fb46433db2, type: 3}
+  - {fileID: 2344238341667890968, guid: 8af8358f795b68e4ab4c4103ef10d871, type: 3}
+  - {fileID: 6580013160624217990, guid: b01807abeef870c488b04c315ff9e291, type: 3}
+  - {fileID: 1741620032916755487, guid: 486eff24d907c9e4e97c6dae651ec7bb, type: 3}
+  - {fileID: 5339360314176287090, guid: 1e33468ae22ef4a498494a9be06269b6, type: 3}
+  - {fileID: 1992852456985878558, guid: e8892411353ff8b4ca19eba5567c3f1c, type: 3}
+  - {fileID: 5652722323130082155, guid: ba2d451b15a8bd94885286b8f8a4753d, type: 3}
+  - {fileID: 1761282422033162995, guid: 4e00e3719999c0345a1db63124301255, type: 3}
+  - {fileID: 5698476450571281781, guid: 44157a990094d914a83e66ce5f089fc2, type: 3}
+  - {fileID: 2801093058316280327, guid: 6be1520c4e957584e8a5d0e122275166, type: 3}
+  - {fileID: 1653425551310096432, guid: 9b75054ef95459049a065d9f441f99d3, type: 3}
+  - {fileID: 2996154765000816861, guid: d44daba9dabd3b24284964dad7231c8b, type: 3}
+  - {fileID: 1497817883876487711, guid: 5e6b2df07e852e047b359e5de30f4b92, type: 3}
+  - {fileID: 4221176748417612848, guid: 23ffcf7fc98727c4daa7ffff64c13c4d, type: 3}
+  - {fileID: 8849650509181538662, guid: f0fe331902cc306478d905b4b214df69, type: 3}
+  - {fileID: 3242996536384039752, guid: 9dd4b27b24b7fd0438c62530bf8c4d91, type: 3}
+  - {fileID: 3454859817643234563, guid: be5e4842aa3d038468f529e564664a0e, type: 3}
+  - {fileID: 6595846391834042098, guid: 2fc6ee379a6bc1c45b45e8f738469fb9, type: 3}
+  - {fileID: 6664959022114793762, guid: ef0cc362c31222a47acdd2121503b8a7, type: 3}
+  - {fileID: 2237137873676621023, guid: 110c3c8e17fd03643aca5a983cae1f07, type: 3}
 --- !u!1 &1025818453
 GameObject:
   m_ObjectHideFlags: 0
@@ -1600,7 +1643,6 @@ GameObject:
   - component: {fileID: 1237358191}
   - component: {fileID: 1237358190}
   - component: {fileID: 1237358189}
-  - component: {fileID: 1237358192}
   m_Layer: 0
   m_Name: 'Main Camera '
   m_TagString: MainCamera
@@ -1667,52 +1709,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1237358187}
   m_LocalRotation: {x: -0.0479596, y: -0, z: -0, w: 0.9988493}
-  m_LocalPosition: {x: -1279.9998, y: -714.3998, z: -18.499998}
+  m_LocalPosition: {x: -1279.9998, y: -760.3, z: -14.1}
   m_LocalScale: {x: 1.3333334, y: 1.3333334, z: 1.3333334}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 340311037}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: -5.498, y: 0, z: 0}
---- !u!114 &1237358192
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1237358187}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6985caf8ff5d66a49821e9a006eb09df, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  ButtonShop: {fileID: 1336069752}
-  Animal:
-  - {fileID: 4024565170488099999, guid: f09b066d5b0be5a4080700f755a2dfa6, type: 3}
-  - {fileID: 5385843060107595807, guid: 865eacd30f7f6e7488f953408b16ba38, type: 3}
-  - {fileID: 8065360507006437391, guid: 8801d85e85b0afd419e80375f3d99101, type: 3}
-  - {fileID: 3904782995947387819, guid: 2b4dcea2142b2c84a8cfc992ef7de168, type: 3}
-  - {fileID: 3192800976972081295, guid: c22e786edb2f11148b85dae36d6a0469, type: 3}
-  - {fileID: 6325241898334201582, guid: 89eb88fd2e6269b45943f3fb46433db2, type: 3}
-  - {fileID: 2344238341667890968, guid: 8af8358f795b68e4ab4c4103ef10d871, type: 3}
-  - {fileID: 6580013160624217990, guid: b01807abeef870c488b04c315ff9e291, type: 3}
-  - {fileID: 1741620032916755487, guid: 486eff24d907c9e4e97c6dae651ec7bb, type: 3}
-  - {fileID: 5339360314176287090, guid: 1e33468ae22ef4a498494a9be06269b6, type: 3}
-  - {fileID: 1992852456985878558, guid: e8892411353ff8b4ca19eba5567c3f1c, type: 3}
-  - {fileID: 5652722323130082155, guid: ba2d451b15a8bd94885286b8f8a4753d, type: 3}
-  - {fileID: 1761282422033162995, guid: 4e00e3719999c0345a1db63124301255, type: 3}
-  - {fileID: 5698476450571281781, guid: 44157a990094d914a83e66ce5f089fc2, type: 3}
-  - {fileID: 2801093058316280327, guid: 6be1520c4e957584e8a5d0e122275166, type: 3}
-  - {fileID: 1653425551310096432, guid: 9b75054ef95459049a065d9f441f99d3, type: 3}
-  - {fileID: 2996154765000816861, guid: d44daba9dabd3b24284964dad7231c8b, type: 3}
-  - {fileID: 1497817883876487711, guid: 5e6b2df07e852e047b359e5de30f4b92, type: 3}
-  - {fileID: 4221176748417612848, guid: 23ffcf7fc98727c4daa7ffff64c13c4d, type: 3}
-  - {fileID: 8849650509181538662, guid: f0fe331902cc306478d905b4b214df69, type: 3}
-  - {fileID: 3242996536384039752, guid: 9dd4b27b24b7fd0438c62530bf8c4d91, type: 3}
-  - {fileID: 3454859817643234563, guid: be5e4842aa3d038468f529e564664a0e, type: 3}
-  - {fileID: 6595846391834042098, guid: 2fc6ee379a6bc1c45b45e8f738469fb9, type: 3}
-  - {fileID: 6664959022114793762, guid: ef0cc362c31222a47acdd2121503b8a7, type: 3}
-  - {fileID: 2237137873676621023, guid: 110c3c8e17fd03643aca5a983cae1f07, type: 3}
 --- !u!1 &1266887082
 GameObject:
   m_ObjectHideFlags: 0
@@ -1850,7 +1853,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1237358192}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: RandomBox2, Assembly-CSharp
         m_MethodName: OnClick
         m_Mode: 1
