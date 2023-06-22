@@ -9,6 +9,7 @@ public class RandomBox2 : MonoBehaviour
 
     public GameObject ButtonShop;
     public Button button;
+    public AudioSource audioSource;
     //public Vector3
     protected GameManager GameManager => GameManager.Instance;
 
@@ -34,6 +35,7 @@ public class RandomBox2 : MonoBehaviour
         {
             GameManager.money = GameManager.money - 50;
 
+            PlaySound();
             if (RankRandom <= 60)
             {
                 int Cspawn = UnityEngine.Random.Range(1, 13);
@@ -294,6 +296,11 @@ public class RandomBox2 : MonoBehaviour
 
             }
         }
+    }
+    private void PlaySound()
+    {
+        // AudioSource 컴포넌트의 Play 메서드를 호출하여 소리를 재생합니다.
+        audioSource.Play();
     }
 
 }
