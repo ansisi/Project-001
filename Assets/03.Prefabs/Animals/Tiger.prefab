@@ -1090,8 +1090,8 @@ GameObject:
   - component: {fileID: 4707078849412459464}
   - component: {fileID: -2843444734787795668}
   - component: {fileID: -6028215239588968346}
-  - component: {fileID: 9174425230395188676}
   - component: {fileID: 2381298548716421471}
+  - component: {fileID: 8724889432320909620}
   m_Layer: 0
   m_Name: Tiger
   m_TagString: Untagged
@@ -1165,20 +1165,6 @@ MonoBehaviour:
   maxIdleTime: 0.1
   minMoveTime: 2
   maxMoveTime: 5
---- !u!136 &9174425230395188676
-CapsuleCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5339360314176287090}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  m_Radius: 0.022803834
-  m_Height: 0.07378149
-  m_Direction: 2
-  m_Center: {x: 0, y: 0.00038920162, z: 0.012538242}
 --- !u!114 &2381298548716421471
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1191,6 +1177,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2cc596cad634bec49ac40264db3dd371, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!65 &8724889432320909620
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5339360314176287090}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.021747455, y: 0.045915775, z: 0.0958235}
+  m_Center: {x: -0.00046346424, y: 0.0005626106, z: -0.0003848052}
 --- !u!1 &5616478940483871137
 GameObject:
   m_ObjectHideFlags: 0
