@@ -55,8 +55,11 @@ public class RandomBox2 : MonoBehaviour
                 }
                 else if (Cspawn == 3)
                 {
-                    Debug.Log("Chick");
+                    GameObject temp10 = Instantiate(Animal[32]);
+                    temp10.transform.position = new Vector3(0.0f, 0.0f, 0.0f);
+                    GameManager.myAnimal.Add(11);
 
+                    Debug.Log("병아리");
                 }
                 else if (Cspawn == 4)
                 {
@@ -267,8 +270,11 @@ public class RandomBox2 : MonoBehaviour
                 }
                 else if (Lspawn == 2)
                 {
-                    //불사조
+                    GameObject temp10 = Instantiate(Animal[33]);
+                    temp10.transform.position = new Vector3(0.0f, 0.0f, 0.0f);
+                    GameManager.myAnimal.Add(11);
 
+                    Debug.Log("불사조  ");
                 }
                 else if (Lspawn == 3)
                 {
