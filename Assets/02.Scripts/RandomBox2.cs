@@ -9,7 +9,7 @@ public class RandomBox2 : MonoBehaviour
 
     public GameObject ButtonShop;
     public Button button;
-    //public Vector3 
+    //public Vector3
     protected GameManager GameManager => GameManager.Instance;
 
     public GameObject[] Animal = new GameObject[35];
@@ -18,7 +18,7 @@ public class RandomBox2 : MonoBehaviour
     {
         ButtonShop = GameObject.Find("Button_Shop");
         button = ButtonShop.GetComponent<Button>();
-        button.onClick.AddListener(OnClick);
+        //button.onClick.AddListener(OnClick);
     }
 
 
@@ -56,7 +56,7 @@ public class RandomBox2 : MonoBehaviour
                 else if (Cspawn == 3)
                 {
                     Debug.Log("Chick");
-                    
+
                 }
                 else if (Cspawn == 4)
                 {
@@ -230,7 +230,7 @@ public class RandomBox2 : MonoBehaviour
                 }
                 else if (Espawn == 4)
                 {
-                    GameObject temp30= Instantiate(Animal[30]);
+                    GameObject temp30 = Instantiate(Animal[30]);
                     temp30.transform.position = new Vector3(0.0f, 0.0f, 0.0f);
                     GameManager.myAnimal.Add(30);
                 }
@@ -285,8 +285,9 @@ public class RandomBox2 : MonoBehaviour
                     temp.transform.position = new Vector3(0.0f, 0.0f, 0.0f);
                     GameManager.myAnimal.Add(0);
                 }
-        
+
             }
         }
     }
+
 }
